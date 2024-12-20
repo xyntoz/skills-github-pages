@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka-Teki Buat Umii</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6;
+        }
+        .teka-teki {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="teka-teki">
+        <h1>Teka-Teki</h1>
+        <p>Kapan abii lahir ke dunia ?</p>
+        <input type="text" id="jawab" placeholder="Jawabanmu...">
+        <button onclick="cekJawab()">Cek Jawaban</button>
+        <p id="hasil"></p>
+    </div>
+    <script>
+        function cekJawab() {
+            var jawab = document.getElementById('jawab').value.toLowerCase();
+            if (jawab === "14 maret 2006") {
+                document.getElementById('hasil').innerHTML = "<span style='color: #f02'>I Love uuu cayangg <3</span>";
+            } else {
+                document.getElementById('hasil').innerHTML = "Jawaban salah!";
+            }
+        }
+    </script>
+</body>
+</html>
